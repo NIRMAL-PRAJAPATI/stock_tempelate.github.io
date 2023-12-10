@@ -1,2 +1,2 @@
-# stock_tempelate.github.io
+# stock tempelate
 its a home page of stock market website...
