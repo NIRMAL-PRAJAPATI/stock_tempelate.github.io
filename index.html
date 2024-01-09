@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>uplinq | home page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="stock market.css">
   </head>
@@ -55,7 +55,10 @@
           <div class="container d-flex" style="margin-top: 100px;">
             <div id="contant" class="my-3">
                 <span class="badge rounded-pill text-bg-primary px-3 py-2 mt-3">Put your Accounting on Autopilot</span>
-                <h1 id="main_heading">Real-time accounting backed by experts</h1>
+                <h1 class="main_heading">Real-time accounting </h1>
+                <div style="display: flex">
+                <h1 class="main_heading">backed&nbsp;by&nbsp;</h1>
+                <h1 class="main_heading" id="txt_changer">Experts</h1></div>
                 <p class="para my-3">Uplinq integrates AI with dedicated accounting specialists to deliver unparalleled quality with minimal fuss. Keep your records current, translate data into actionable insights, and receive advanced financial intelligence at your fingertips.</p>
                 <button class="schedule btn">Schedule a Demo</button>
                 <button class="lmore btn">Learn More</button>
@@ -212,14 +215,13 @@
       <br><br><br>
       <div style="margin-left: 12%; color: white; text-align: left;">
       <h6>TAILORED SOLUTIONS FOR YOUR <code style="font-size: 17px; font-weight: bolder;">UNIQUE BUSINESS</code></h6>
-      <h1>Discover the</h1>
-        <h1>Future with our</h1>
+      <h1>Discover the<br>Future with our<br>
         <h1>Cutting-Edge <code style="color: rgb(165, 6, 6); font-weight: bolder; font-size: 40px;">Web Platform</code></h1><br></div>
       <img src="img/pro image.jpg" height="450px" width="100%" id="win4img">
       <img src="img/thumb.png" height="100px" style="margin: 100px 0px 5px 0px;">
       <h1 id="win4_head">Tired of stressing out about bookkeeping and tax?</h1><br>
       <p style="color: grey; margin: 0% 15%;">Uplinq real-time bookkeeping and experienced accountants help hundreds of businesses stay on top of their financials and tax obligations. Uplinq is bookkeeping and tax made simple.</p>
-      <button type="submit" id="contact" class="btn btn-primary">Cotact Branch</button>
+      <button type="submit" id="contact" class="btn btn-primary">Contact Branch</button>
     </section>
 
     <!-- foot part -->
@@ -238,6 +240,31 @@
         </ul>
       </footer>
 
+
+      <script>
+        const changer = document.getElementById('txt_changer');
+
+        // changer.textContent = "ssss";
+        const textload = () => {
+          setTimeout(() => {
+            changer.textContent = "Market Experts";
+          }, 0);
+
+          setTimeout(() => {
+            changer.textContent = "Chief Executives";
+          }, 3000);
+
+          setTimeout(() => {
+            changer.textContent = "Stock Leaders";
+          }, 6000);
+
+          setTimeout(() => {
+            changer.textContent = "Accountants"
+          }, 9000);
+        }
+
+        textload();
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
